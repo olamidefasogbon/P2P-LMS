@@ -33,32 +33,51 @@ body{
     font-weight: bolder;
     font-size: 2.5rem;
     margin-bottom: 2.5rem;
+    margin: 1em 0.3em;
 }
 .teachers{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 .teachers .box{
-    width: 45%;
+    width:30%;
     background-color: var(--light-blue);
     display: flex;
     flex-direction: column;
-    /* margin: 1em 1em; */
+    margin: 0.7em 0.7em;
     border: 0;
+    height: fit-content;
+    padding-top: 20px;
+}
+.descriptions{
+    width: 100%;
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 15px;
 }
 .teacher-name{
     width: 100%;
-    background-color: #fff;
-    text-align: center;
+    background-color: var(--white-color);
     font-size: 20px;
     font-weight: bolder;
-    padding: 0.5rem 1rem;
+}
+.trainer-nm{
+    background-color: var(--white-color);
+    font-size: 18px;
 }
 .box .img-box{
     width: 100%;
     align-items: center;
     display: flex;
     flex-direction: column;
+}
+.box .img-box img{
+    width: 100%;
 }
 /* -----------Trainers section ends here------------- */
