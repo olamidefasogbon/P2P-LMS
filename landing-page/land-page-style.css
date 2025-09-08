@@ -1,76 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: initial;
+    outline: 0;
+    font-family: 'Poppins' sans-serif;
+    transition: 0.2 ease-in-out;
+}
 :root{
-    --bg: #f7fbff;
-    --card: #ffffff;
-    --muted: #6b7280;
-    --accent: #2563eb; /* blue */
-    --accent-2: #7c3aed; /* purple */
-    --glass: rgba(255,255,255, .6);
-    --max-w: 1200px;
-    --radius: 12px;
-    --shadow: 0, 8px 24px rgba(16,24,40, .08);
-    --font-family: Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    --primary:#647FBC;
+    --light-blue:#91ADC8;
+    --greenish:#AED6CF;
+    --yellowish:#FAFDD6;
+    --white-color:#fff;
 }
-
-*{box-sizing: border-box;}
-html, body{height: 100%;}
 body{
-    margin: auto;
-    background: linear-gradient(180deg, #f7fbff, 0%, #f1f7ff 100%);
-    color:#0f172a;
-    -webkit-font-smothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    line-height: 1.5;
-    font-size: 16px;
-    animation-delay: .5ms;
-    animation: alternate;
-    -webkit-animation-delay: .5ms;
-    -webkit-animation: alternate;
+    width: 100%;
 }
 
-/* Layout */
-.container{
-    width: 92%;
-    max-width: var(--max-w);
-    margin: 0 auto;
+/* ---------styling the trainers section --------------- */
+.trainers-Sec{
+    background-color: var(--light-blue);
+    width:100%;
+    padding: 4rem 4rem;
 }
-
-/* Header */
-.site-header{
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    backdrop-filter: blur(6px);
-    background: rgba(255,255,255, .65);
-    border-bottom: 1px solid rgba(15,23,42, .04);
+.trainer-container{
+    width: 100%;
 }
-.header-inner{
+.trainer-container .trainer-top-text{
+    color: var(--white-color);
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+.teachers{
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     align-items: center;
+    justify-content: center;
+}
+.teachers .box{
+    width:23%;
+    background-color: var(--greenish);
+    display: flex;
+    flex-direction: column;
+    margin: 0.7em 0.7em;
+    border: 0;
+    height: max-content;
+    padding-top: 20px;
+}
+.descriptions{
+    width: 100%;
+    background-color: var(--white-color);
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 15px;
+}
+.teacher-name{
+    width: 100%;
+    background-color: var(--white-color);
+    font-size: 20px;
+    font-weight: bolder;
+}
+.trainer-nm{
+    background-color: var(--white-color);
+    font-size: 18px;
+}
+.box .img-box{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.box .img-box img{
+    width: 100%;
+}
+/* -----------Trainers section ends here------------- */
+
+/* --------footer starts------------ */
+footer{
+    background-color: var(--primary);
+    width: 100%;
+    padding: 2rem 2rem;
+    display: flex;
     justify-content: space-between;
-    gap: 1rem;
-    padding: .75rem 0;
+    color: var(--white-color);
+    font-weight: bolder;
+    flex-wrap: wrap;
 }
-.brand{
-    display: flex;
-    align-items: center;
-    gap: .6rem;
-    text-decoration: none;
-    color: var(--accent);
-    font-weight: 700;
-    letter-spacing: .2px;
+footer .main-ft{
+    font-weight: bolder;
+    font-size: 30px;
 }
-.logo{width: 36px;height: 36px;}
-
-/* nav bar */
-.navbar{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-.navbar-link{
-    color: var(--muted);
-    text-decoration: none;
-    padding: .35rem .6rem;
-    border: 8px;
-    font-weight: 500;
-}
+/* ----------footer ends------------- */
