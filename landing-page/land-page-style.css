@@ -96,7 +96,7 @@ body{
     padding: .35rem .6rem;
     border-radius: 8px;
     color: var(--primary);
-    font-weight: 500;
+    font-weight: bolder;
     font-size: 1rem;
     transition: color 0.2s ease-in-out;
 }
@@ -187,6 +187,66 @@ body{
     background-color: var(--accent-hover);
     color: var(--white-color);
 }
+
+/*HERO IMAGE*/
+.card-hero {
+    background: linear-gradient(180deg, #f7fbff 0%, #f1f7ff 100%);
+    border-radius: 14px;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.card-hero img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* HERO SECTION ENDS HERE */
+
+/* Section */
+
+.section{
+    padding: 2.25rem 0;
+}
+
+.section .alt{
+    background-color: var(--bg);
+}
+
+.section .header{
+    margin-bottom: 1rem;
+}
+
+.section .header h2{
+    font-size: 1.25rem;
+    margin: 0rem;
+}
+
+.center{
+    text-align: center;
+}
+/*CTA*/
+.cta{
+    text-decoration: none;
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    padding: .45rem .8rem;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: var(--shadow);
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.cta:hover{
+    background-color: var(--accent);
+    color: var(--white-color);
+}
+
+
 /* ---------styling the trainers section --------------- */
 .trainers-Sec{
     background-color: var(--light-blue);
