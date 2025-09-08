@@ -21,7 +21,7 @@ body{
 
 /* ---------styling the trainers section --------------- */
 .trainers-Sec{
-    background-color: var(--primary);
+    background-color: var(--light-blue);
     width:100%;
     padding: 4rem 4rem;
 }
@@ -32,8 +32,7 @@ body{
     color: var(--white-color);
     font-weight: bolder;
     font-size: 2.5rem;
-    margin-bottom: 2.5rem;
-    margin: 1em 0.3em;
+    margin-bottom: 3rem;
 }
 .teachers{
     display: flex;
@@ -43,19 +42,20 @@ body{
     justify-content: center;
 }
 .teachers .box{
-    width:30%;
-    background-color: var(--light-blue);
+    width:23%;
+    background-color: var(--greenish);
     display: flex;
     flex-direction: column;
     margin: 0.7em 0.7em;
     border: 0;
-    height: fit-content;
+    height: max-content;
     padding-top: 20px;
 }
 .descriptions{
     width: 100%;
     background-color: var(--white-color);
     display: flex;
+    height: 100%;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -76,8 +76,26 @@ body{
     align-items: center;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 .box .img-box img{
     width: 100%;
 }
 /* -----------Trainers section ends here------------- */
+
+/* --------footer starts------------ */
+footer{
+    background-color: var(--primary);
+    width: 100%;
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--white-color);
+    font-weight: bolder;
+    flex-wrap: wrap;
+}
+footer .main-ft{
+    font-weight: bolder;
+    font-size: 30px;
+}
+/* ----------footer ends------------- */
