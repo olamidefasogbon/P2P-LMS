@@ -15,3 +15,50 @@
     --yellowish:#FAFDD6;
     --white-color:#fff;
 }
+body{
+    width: 100%;
+}
+
+/* ---------styling the trainers section --------------- */
+.trainers-Sec{
+    background-color: var(--primary);
+    width:100%;
+    padding: 4rem 4rem;
+}
+.trainer-container{
+    width: 100%;
+}
+.trainer-container .trainer-top-text{
+    color: var(--white-color);
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+.teachers{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.teachers .box{
+    width: 45%;
+    background-color: var(--light-blue);
+    display: flex;
+    flex-direction: column;
+    /* margin: 1em 1em; */
+    border: 0;
+}
+.teacher-name{
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 0.5rem 1rem;
+}
+.box .img-box{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+/* -----------Trainers section ends here------------- */
