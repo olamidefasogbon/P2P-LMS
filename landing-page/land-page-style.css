@@ -1,1 +1,17 @@
-ghhghgh
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: initial;
+    outline: 0;
+    font-family: 'Poppins' sans-serif;
+    transition: 0.2 ease-in-out;
+}
+:root{
+    --primary:#647FBC;
+    --light-blue:#91ADC8;
+    --greenish:#AED6CF;
+    --yellowish:#FAFDD6;
+    --white-color:#fff;
+}
