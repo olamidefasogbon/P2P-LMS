@@ -48,6 +48,7 @@ header {
 }
 
 .contents {
+    padding-top: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -155,6 +156,7 @@ form p {
 }
 
 form input {
+    color: #647FBC;
     padding: 20px 12px;
     border: 2.5px solid #647FBC;
     border-radius: 6px;

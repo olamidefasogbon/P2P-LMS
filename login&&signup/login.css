@@ -69,6 +69,7 @@ header {
 }
 
 .contents {
+    padding-top: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -141,7 +142,7 @@ form {
     box-shadow: 0 2px 16px rgba(100,127,188,0.08);
     min-width: 560px;
     /* max-width: 420px; */
-    min-height: 500px;
+    min-height: 400px;
     margin: 0 auto;
 }
 
@@ -176,6 +177,7 @@ form p {
 }
 
 form input {
+    color: #647FBC;
     padding: 20px 12px;
     border: 2.5px solid #647FBC;
     border-radius: 6px;
