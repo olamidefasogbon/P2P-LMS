@@ -42,6 +42,99 @@ body{
 }
 /*Layout Ends*/
 
+/*HERO SECTION STARTS HERE*/
+
+.hero{
+    padding: 4rem 1rem;
+    background: #f9fbff;
+}
+
+.hero-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.hero-text{
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.hero-text h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.hero-text p{
+    font-size: 1.1rem;
+    color: var(--muted);
+    margin-bottom: 2rem;
+    max-width: 500px;
+}
+
+.btn-primary{
+    display: inline-block;
+    padding: .8rem 1.8rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    background: #4f46e5;
+    color: var(--white-color);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    border: 0;
+    color: var(--primary);
+    background-color: var(--primary);
+    color: var(--white-color);
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover{
+    background-color: var(--accent-hover);
+    color: var(--white-color);
+}
+
+.hero-image{
+    display: flex;
+    justify-content: flex-end;
+    min-width: 300px;
+    text-align: center;
+}
+
+.hero-image img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    object-fit: cover;
+}
+
+@media (max-width: 768px){
+    .hero-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text, .hero-image{
+        order: 1;
+        order: 2;
+        text-align: center;
+    }
+    
+}
 /* Header */
 .site-header{
     background-color: var(--grey);
@@ -104,20 +197,83 @@ body{
     background: rgba(37, 99, 235, 0, .08);
     color: var(--shadow);
 }
-.cta{
-    text-decoration: none;
-    background: transparent;
-    border: 1px solid var(--primary);
-    color: var(--primary);
-    padding: .45rem .8rem;
-    border-radius: 8px;
-    font-weight: 600;
-    box-shadow: var(--shadow);
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+.cta-signup section{
+    background: var(--primary);
+    background-color: var(--primary);
+    width:100%;
+    padding: 4rem 4rem;
+    text-align: center;
 }
-.cta:hover{
-    background-color: var(--accent);
+
+.cta-signup{
+    background-color: var(--primary);
+}
+
+.cta-signup .cta-text{
     color: var(--white-color);
+    font-weight: bolder;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.cta-signup p{
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 2.5rem;
+}
+
+/*Card Grid*/
+
+.cta-cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Individual Card*/
+
+.cta-card{
+    width:20%;
+    display: flex;
+    flex-direction: column;
+    margin: 0.7em 0.7em;
+    border: 0;
+    height: 50%;
+    padding-top: 0px;
+}
+
+.cta-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+.cta-card .img{
+    background-color: var(--greenish);
+    width: 50px;
+    height: 40px;
+    margin-bottom: 1rem;
+    object-fit: contain;
+    border-radius: 60%;
+}
+
+.cta-card h3{
+    width: 100%;
+    background-color: var(--white-color);
+    display: flex;
+    height: 20%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1px 2px;
+}
+
+.cta-card p{
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.4;
 }
 
 /*Mobile Menu*/
@@ -319,7 +475,6 @@ footer{
     padding: 2rem 2rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     color: var(--white-color);
     font-weight: bolder;
     flex-wrap: wrap;
