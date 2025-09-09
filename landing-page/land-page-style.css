@@ -1,0 +1,144 @@
+/* General Body and Section Styling */
+        .image1{
+            width: 40px;
+            height: 50px;
+        }
+
+        .testimonials-section {
+            padding: 80px 20px;
+            text-align: center;
+            box-sizing: border-box;
+            background-color: #FFF8E6;
+        }
+
+        .testimonials-section h2 {
+            font-size: 38px; /* Adjusted to be closer to the image */
+            font-weight: 700; /* Bold */
+            color: #2c3e50; /* Darker text for headings */
+            margin-bottom: 10px;
+        }
+
+        .testimonials-section p.subtitle {
+            font-size: 18px; /* Adjusted for subtitle */
+            color: #7f8c8d; /* Muted text for description */
+            margin-bottom: 50px; /* More space before cards */
+            line-height: 1.6;
+        }
+
+        .testimonials-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px; /* Space between cards */
+            flex-wrap: wrap;
+            max-width: 1200px; /* Max width to contain cards */
+            margin: 0 auto; /* Center the container */
+        }
+
+        /* Testimonial Card Styling */
+        .testimonial-card {
+            background-color: #fdfdfd; /* White background for the card body */
+            border-radius: 8px;
+            padding: 30px;
+            width: 380px; /* Fixed width for consistency */
+            text-align: left;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Softer shadow */
+            position: relative;
+            box-sizing: border-box; /* Include padding in width */
+            border-left: 6px solid; /* For the color stripe */
+            overflow: hidden; /* To contain pseudo-element quote */
+        }
+
+        /* Specific card colors */
+        .testimonial-card.blue {
+            border-color: #4A90E2; /* Blue stripe color */
+            background-color: white; /* Light blue background as seen in image */
+        }
+
+        .testimonial-card.orange {
+            border-color: #F5A623; /* Orange stripe color */
+            background-color: white; /* Light orange background as seen in image */
+        }
+
+        /* Inverted comma (quote) styling using pseudo-elements */
+        .testimonial-card::before {
+            content: '“'; /* Left double quotation mark */
+            position: absolute;
+            top: 15px; /* Adjust as needed */
+            left: 20px; /* Adjust as needed */
+            font-family: serif; /* To ensure a proper quote mark glyph */
+            font-size: 80px; /* Large size */
+            color: rgba(0, 0, 0, 0.08); /* Very light grey, almost transparent */
+            z-index: 1; /* Behind text */
+            line-height: 1; /* Prevent extra line height */
+            height: 0; /* Important for alignment */
+        }
+
+        .testimonial-text {
+            font-size: 17px;
+            color: #34495e; /* Darker text for testimonial */
+            margin-bottom: 25px;
+            line-height: 1.6;
+            position: relative; /* To be above the pseudo-element quote */
+            z-index: 2;
+            padding-top: 15px; /* Adjust to move text below the large quote mark */
+            font-weight: 500;
+        }
+
+        .author-info {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .author-info img {
+            width: 90px; /* Slightly larger image */
+            height: 90px;
+            border-radius: 50%;
+            margin-right: 18px; /* More space */
+            object-fit: cover;
+            border: 2px solid #ffffff; /* Small white border to make it pop */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .author-details {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .author-name {
+            font-weight: 700; /* Bold name */
+            color: #2c3e50;
+            font-size: 16px;
+        }
+
+        .author-title {
+            color: #7f8c8d;
+            font-size: 14px;
+            margin-top: 2px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .testimonials-section {
+                padding: 60px 15px;
+            }
+
+            .testimonials-section h2 {
+                font-size: 30px;
+            }
+
+            .testimonials-section p.subtitle {
+                font-size: 16px;
+            }
+
+            .testimonial-card {
+                width: 100%; /* Full width on smaller screens */
+                max-width: 400px; /* Limit max width for better readability */
+                margin-bottom: 20px; /* Add space between stacked cards */
+            }
+
+            .testimonials-container {
+                gap: 20px;
+            }
+        }
