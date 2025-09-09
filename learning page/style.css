@@ -65,72 +65,79 @@ header{
 }
 /* ==========header ends============= */
 
-
-/* ===============section starts here============ */
-.Profile{
-    width: 100%;
+/* ---------styling the trainers section --------------- */
+.trainers-Sec{
+    width:100%;
+    padding-bottom: 10rem;
 }
-.section-container{
-    width: 100%;
-}
-.text-up{
-    align-items: center;
-    text-align: center;
-    color: var(--primary);
-}
-.add-picture{
+.trainer-container{
     width: 100%;
     padding:0rem 5rem 0rem 5rem;
-    color: var(--primary);
 }
-.file-container{
-    width: 12rem;
-    border:3px solid var(--primary);
-    height: 13rem;
-    margin: 0;
-    padding: 0.4rem;
-    border-radius: 13px;
+.heading-txt{
+    width: 100%;
+    color: var(--primary);
+    line-height: 0;
+    font-size: 20px;
+    margin-bottom: 2em;
+}
+.trainer-top-text{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.teachers{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: left;
+}
+.teachers .box{
+    width:20%;
+    background-color: var(--greenish);
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    margin: 0.7em 0.7em;
+    border: 0;
+    height: 50%;
+    padding-top: 0px;
 }
-
-.profile-form{
+.descriptions{
     width: 100%;
-}
-form{
-    width: 50rem;
-    padding:1rem 4rem 0rem 4rem;
-    color: var(--primary);
-    font-weight: bold;
-}
-.input-box{
-    width: 100%;
+    background-color:var(--glass);
     display: flex;
-    justify-content: space-between;
-    margin:1em;
+    height: 20%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 6px 8px;
 }
-.input-box input{
-    border: 2px solid var(--primary);
-    border-radius: 7px;
-    padding: 0.5em;
-    width: 80%;
-    outline: 0;
+.teacher-name{
+    width: 50%;
+    background-color:transparent;
+    font-size: 20px;
+    letter-spacing: -0.025em;
+    font-weight: bolder;
 }
-.input-box input[type="submit"]{
-    background-color: var(--primary);
-    color: var(--white-color);
-    font-size: 15px;
-    font-weight: bold;
-    width: 10rem;
-    margin-top: 1em;
-    cursor: pointer;
-    margin-bottom: 2.6em;
+.trainer-nm{
+    background-color: transparent;
+    font-size: 18px;
 }
-.input-box input[type="submit"]:hover{
-    background-color: #2563eb;
+.box .img-box{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
 }
-/* ==============section ends here============== */
+.box .img-box img{
+    width: 100%;
+}
+/* -----------Trainers section ends here------------- */
+
+
+
+
 
 /* --------footer starts------------ */
 footer{
@@ -143,7 +150,7 @@ footer{
     color: var(--white-color);
     font-weight: bolder;
     flex-wrap: wrap;
-    font-size: 18px;
+    font-size: 22px;
 }
 footer .main-ft{
     font-weight: bolder;

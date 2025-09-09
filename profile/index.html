@@ -29,8 +29,9 @@
 
             <div class="add-picture">
                 <h1>Add a profile picture</h1>
-                <div class="file-container">
-                    <input type="file" class="file">
+                <div class="file-container" id="customButton">
+                    <img id="previewImage" src="" alt="Image Preview" style="max-width: 100%; display: none; height: 100%;" />
+                    <input type="file" class="file" id="fileInput" style="display: none;">
                 </div>
             </div>
 
@@ -68,7 +69,46 @@
             </div>
         </div>
         </section>
+
+         <footer>
+        <div class="main-ft">PL.</div>
+        <div class="left1"><p>&copy; 2025 PL, Inc.</p></div>
+        <div class="middle"><p>Terms of Service</p></div>
+        <div class="right-ft"><p>Privacy Policy</p></div>
+        
+    </footer>
      </main>
      <!-- ============main ends here============ -->
+
+
+       <!-- ==============script for input file========= -->
+     <script>
+  document.getElementById('customButton').addEventListener('click', function () {
+    document.getElementById('fileInput').click();
+  });
+
+  // Handle image selection
+  fileInput.addEventListener('change', function () {
+    const file = this.files[0];
+
+    if (file && file.type.startsWith('image/')) {
+      const reader = new FileReader();
+
+      reader.onload = function (e) {
+        previewImage.src = e.target.result;
+        previewImage.style.display = 'block';
+      };
+
+      reader.readAsDataURL(file); // Read file as base64
+    } else {
+      previewImage.src = '';
+      previewImage.style.display = 'none';
+      alert('Please select a valid image file.');
+    }
+});
+
+const previewImage = document.getElementById('previewImage');
+
+</script>
 </body>
 </html>
