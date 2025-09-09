@@ -144,8 +144,8 @@ form input {
 }
 
 form input::placeholder {
-    font-size: large;
     color: #647FBC;
+    font-size: large;
 }
 
 form input:focus {
@@ -181,7 +181,7 @@ footer {
     background-color: #647FBC;
     color: white;
     text-align: center;
-    padding: 16px;
+    padding: 12px;
     z-index: 100;
     font-size: larger;
     font-weight: 600;
