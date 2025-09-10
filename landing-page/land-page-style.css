@@ -6,23 +6,29 @@
 
         .testimonials-section {
             padding: 80px 20px;
-            text-align: center;
             box-sizing: border-box;
             background-color: #FFF8E6;
         }
 
         .testimonials-section h2 {
-            font-size: 38px; /* Adjusted to be closer to the image */
+            /*font-size: 38px; Adjusted to be closer to the image */
             font-weight: 700; /* Bold */
             color: #2c3e50; /* Darker text for headings */
-            margin-bottom: 10px;
+            font-size: 2.7rem;
+            padding: 0 1rem;
+            padding-left: 1em;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
         }
 
         .testimonials-section p.subtitle {
             font-size: 18px; /* Adjusted for subtitle */
             color: #7f8c8d; /* Muted text for description */
-            margin-bottom: 50px; /* More space before cards */
+            margin: 0; /* More space before cards */
             line-height: 1.6;
+            padding: 0 2rem;
+            padding-bottom: 3rem;
+            padding-left: 2.5em;
         }
 
         .testimonials-container {
@@ -369,6 +375,16 @@ body{
     margin-bottom: 2.5rem;
 }
 
+.cta-signup .container .cta-text{
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    margin-bottom: 3rem;
+}
+
+.cta-signup .container .cta-text .p{
+    padding: .2em;
+    margin: .5rem;
+}
 /*Card Grid*/
 
 .cta-cards{
@@ -377,6 +393,7 @@ body{
     width: 100%;
     align-items: center;
     justify-content: center;
+    padding-bottom: 2rem;
 }
 
 /*Individual Card*/
@@ -657,7 +674,7 @@ body{
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 50%;
+    height: 0%;
 }
 .box .img-box img{
     width: 100%;
