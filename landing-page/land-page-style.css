@@ -378,12 +378,13 @@ body{
 .cta-signup .container .cta-text{
     font-size: 2rem;
     padding: 1rem 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
-.cta-signup .container .cta-text .p{
-    padding: .2em;
-    margin: .5rem;
+.cta-signup .container .cta-text p.p{
+    padding: .1em;
+    margin: 0;
+    padding-top: 0;
 }
 /*Card Grid*/
 
