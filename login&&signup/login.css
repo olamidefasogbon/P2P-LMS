@@ -229,3 +229,10 @@ footer {
     font-size: 13px;
     font-weight: 600;
 }
+
+.sign-up-opt p {
+    text-align: center;
+    font-size: 0.98rem;
+    color: #647FBC;
+    margin: 0;
+}

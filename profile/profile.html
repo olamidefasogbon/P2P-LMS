@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Setup</title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="profile-style.css" rel="stylesheet" />
 </head>
 <body>
     <!-- -----header starts---------- -->
     <header>
         <div class="header-container">
             <div class="contents">
-                <div class="logo"><a href="#" class="brand">PL.</a></div>
+                <div class="logo"><a href="../landing-page/land-page.html" class="brand">PL.</a></div>
                 <div class="learning"><p class="learning-text">Your Learning</p></div>
             </div>
     <!-- =========horizontal line starts======= -->,
@@ -25,13 +25,13 @@
      <main>
         <section class="Profile">
         <div class="section-container">
-                <div class="text-up"><h1>Complete your profile</h1></div>
+                <div class="text-up"><h1>COMPLETE YOUR PROFILE</h1></div>
 
             <div class="add-picture">
                 <h1>Add a profile picture</h1>
                 <div class="file-container" id="customButton">
                     <img id="previewImage" src="" alt="Image Preview" style="max-width: 100%; display: none; height: 100%;" />
-                    <input type="file" class="file" id="fileInput" style="display: none;">
+                    <input type="file" class="file" id="fileInput" style="display: none;" required accept="image/*">
                 </div>
             </div>
 
@@ -59,7 +59,7 @@
 
                     <div class="input-box">
                         <label for="Whatsapp">Whatsapp:</label>
-                        <input type="text">
+                        <input type="text" required>
                     </div>
 
                     <div class="input-box">
