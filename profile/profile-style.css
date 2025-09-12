@@ -73,6 +73,16 @@ header{
     transition: color 0.2s ease-in-out;
 }
 
+.learning{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bolder;
+    padding: .1rem;
+    text-transform: uppercase;
+    user-select: none;
+}
+
 .line{
     margin-top: -2.2em;
     width: 86%;
