@@ -104,23 +104,6 @@ form button:hover {
     background: #405a99;
 }
 
-footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #647FBC;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    z-index: 100;
-    font-size: larger;
-    font-weight: 600;
-}
-
 /* Success message styling */
 .success-box {
     background: #fff;
@@ -160,4 +143,21 @@ footer {
 }
 .login-btn:hover {
     background: #405a99;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #647FBC;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    z-index: 100;
+    font-size: 13px;
+    font-weight: 600;
 }
