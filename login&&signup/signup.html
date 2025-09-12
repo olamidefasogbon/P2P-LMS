@@ -24,13 +24,13 @@
         </div>
         
         <h3>Sign Up with Email</h3>
-        <form class="form" action="">
+        <form class="form" action="successful-signup.html" method="GET">
             <label for="email"></label>
-            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="email" name="email" id="email" placeholder="Email" required minlength="8" maxlength="50" title="Email should be between 8-50 characters">
             <label for="password"></label>
-            <input type="password" name="password" id="password" placeholder="Password">
+            <input type="password" name="password" id="password" placeholder="Password" required minlength="8" maxlength="15" title="Password should be between 8-15 characters">
             <label for="confirm-password"></label>
-            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password">
+            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required minlength="8" maxlength="15" title="Confirm Password should be between 8-15 characters">
 
             <button id="signup">Sign Up</button>
 
