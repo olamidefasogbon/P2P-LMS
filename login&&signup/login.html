@@ -24,7 +24,7 @@
         </div>
         
         <h3>Login to continue your learning Journey</h3>
-        <form class="form" action="">
+        <form class="form" id="loginForm" onsubmit="handleLogin(event)">
             <label for="email"></label>
             <input type="email" name="email" id="email" placeholder="Email" required minlength="8" maxlength="50">
             <label for="password"></label>
@@ -32,7 +32,7 @@
 
             <a href="../forgot-password/pw-reset.html"><p>Forgot Password?</p></a>
 
-            <button id="login">Login</button>
+            <button type="submit" id="login">Login</button>
 
             <br>
             <p>Other login options</p>
@@ -55,5 +55,22 @@
         <div class="middle"><p>Terms of Service</p></div>
         <div class="right-ft"><p>Privacy Policy</p></div>
     </footer>
+
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // For demo purposes, checking if email and password meet minimum requirements
+            if (email && password && password.length >= 8) {
+                // For now, we'll just redirect to the dashboard
+                window.location.href = '../dashboard/dashboard.html';
+            } else {
+                alert('Please enter valid credentials. Password must be at least 8 characters long.');
+            }
+        }
+    </script>
 </body>
 </html>
