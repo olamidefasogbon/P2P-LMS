@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Setup</title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="profile-style.css" rel="stylesheet" />
 </head>
 <body>
     <!-- -----header starts---------- -->
@@ -31,7 +31,7 @@
                 <h1>Add a profile picture</h1>
                 <div class="file-container" id="customButton">
                     <img id="previewImage" src="" alt="Image Preview" style="max-width: 100%; display: none; height: 100%;" />
-                    <input type="file" class="file" id="fileInput" style="display: none;">
+                    <input type="file" class="file" id="fileInput" style="display: none;" required accept="image/*">
                 </div>
             </div>
 
@@ -59,7 +59,7 @@
 
                     <div class="input-box">
                         <label for="Whatsapp">Whatsapp:</label>
-                        <input type="text">
+                        <input type="text" required>
                     </div>
 
                     <div class="input-box">
