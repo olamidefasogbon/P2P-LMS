@@ -16,6 +16,7 @@ body{
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     -webkit-text-size-adjust: 100%;
+    font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
 }
 main{
     width: 100%;
@@ -56,6 +57,22 @@ header{
     font-weight: bolder;
     padding:1.5rem 5rem 0rem 5rem;
 }
+
+.contents .logo a{
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    letter-spacing: -0.025em;
+    padding: .1rem 0;
+    text-transform: uppercase;
+    user-select: none;
+}
+.contents .logo a:hover{
+    color: var(--shadow);
+    transition: color 0.2s ease-in-out;
+}
+
 .line{
     margin-top: -2.2em;
     width: 86%;
