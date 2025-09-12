@@ -699,3 +699,153 @@ footer .main-ft{
     font-size: 20px;
 }
 /* ----------footer ends------------- */
+
+/* ===== Mobile Styles ===== */
+@media (max-width: 768px) {
+  /* NAVIGATION BAR */
+  .container-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* keep them on the right */
+    gap: 0.5rem;
+  }
+
+  .navbar-link,
+  .btn-primary {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  /* HERO SECTION */
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .hero-text {
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-image img {
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* CTA SIGNUP */
+  .cta-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 0 1.2rem; /* nice left & right padding */
+  }
+
+  .cta-card {
+    width: 100%;
+    max-width: 400px; /* limit max width for better readability */
+    margin: 0 auto; /* center the cards */
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-card {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .cta-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .descriptions {
+    padding: 0.8rem;
+  }
+
+  /* TRAINERS SECTION */
+  .teachers {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 0 1.2rem;
+  }
+
+  .teachers .box {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .teachers .box img {
+    width: 100%;
+    background: var(--greenish);
+    height: auto;
+    display: block;
+  }
+
+  .descriptions {
+    padding: 0.8rem;
+  }
+
+  /* FOOTER */
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+
+  /* HEADINGS */
+  h2, h3 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  p{
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* BUTTONS */
+  .btn-primary {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
