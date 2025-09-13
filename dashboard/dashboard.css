@@ -26,10 +26,16 @@ body {
     flex-direction: column;
     width: 100%;
     max-width: 890px;
-    margin: 0 auto;
+    
     color: #647FBC;
     margin-top: 0;
     margin-bottom: 3rem;
+
+    background-color: var(--grey);
+    backdrop-filter: blur(6px);
+    top: 0;
+    z-index: 50;
+    box-shadow: var(--shadow);
 }
 
 .container-head .header {
