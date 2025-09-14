@@ -7,14 +7,20 @@
     <link rel="stylesheet" href="./signup.css">
 </head>
 <body>
-    <header>
-        <div class="brand">
-            <h1>PL.</h1>
-        </div>
-        <div class="mess">
-            <a class="navbar-link" href="/landing-page/land-page.html"><h3>HOME</h3></a>
-        </div>
+    <!-- NAVIGATION BAR STARTS HERE -->
+    <header class="site-header">
+        <div class="container-head">
+                <a class="brand" href="../landing-page/land-page.html">
+                    <svg class="logo" viewbox="0 0 24 24" aria-hidden="true"></svg>
+                    <span>PL.</span>
+                </a>
+
+                <nav class="navbar" id="navbar">
+                    <a class="navbar-link" href="../landing-page/land-page.html">HOME</a>
+                </nav>
+            </div>
     </header>
+    <!-- NAVIGATION BAR ENDS HERE -->
 
     <div class="contents">
         <div  class="disp">
@@ -24,7 +30,7 @@
         </div>
         
         <h3>Sign Up with Email</h3>
-        <form class="form" action="../profile/profile.html" method="GET">
+        <form class="form" action="successful-signup.html" method="GET">
             <label for="email"></label>
             <input type="email" name="email" id="email" placeholder="Email" required minlength="8" maxlength="50" title="Email should be between 8-50 characters">
             <label for="password"></label>

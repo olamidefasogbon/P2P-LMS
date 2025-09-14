@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="pw-reset.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email OTP</title>
+    <title>Password Reset Success</title>
+    <link rel="stylesheet" href="../forgot-password/pw-reset.css">
 </head>
 <body>
     <header class="site-header">
@@ -15,22 +15,21 @@
                 </a>
 
                 <nav class="navbar" id="navbar">
-                    <a class="navbar-link" href="/login&&signup/signup.html">SIGN UP</a>
+                    <a class="navbar-link" href="../landing-page/land-page.html">HOME</a>
                 </nav>
         </div>
     </header>
 
     <div class="contents">
-        <h2>Enter OTP</h2>
-        <form action="new-pw.html" method="GET">
-            <label for="otp">Enter the OTP sent to your email:</label>
-            <input type="password" id="otp" name="otp" required>
-            <button type="submit">Verify OTP</button>
-        </form>
+        <div class="success-box">
+            <h2>You are now a trainer</h2>
+            <!-- <p>Your account has been created successfully. Let's complete your profile.</p> -->
+            <a href="../dashboard/dashboard.html" class="login-btn">Go Back Home</a>
+        </div>
     </div>
 
     <footer>
-        <div class="main-ft">PL</div>
+        <div class="main-ft">PL.</div>
         <div class="left1"><p>&copy; 2025 PL, Inc.</p></div>
         <div class="middle"><p>Terms of Service</p></div>
         <div class="right-ft"><p>Privacy Policy</p></div>
