@@ -151,6 +151,14 @@ body {
     border-radius: 16px;
 }
 
+.hero .hero-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 1rem;
+}
+
 @media (max-width: 540px) {
     /* .hero-right img {
         width: 120px;
